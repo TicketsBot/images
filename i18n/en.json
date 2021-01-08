@@ -1,0 +1,533 @@
+[{
+	"id": 57,
+	"simple_name": "t!setup: Ticket limit",
+	"value": "Specify the maximum amount of tickets that a **single user** should be able to have open at once"
+}, {
+	"id": 13,
+	"simple_name": "Tag list",
+	"value": "IDs for all tags: \\n%s\\nTo view the contents of a tag, run `%stag \u003cID\u003e`"
+}, {
+	"id": 53,
+	"simple_name": "Too many tickets",
+	"value": "There are too many tickets in the ticket category. Ask an admin to close some, or to move them to another category"
+}, {
+	"id": 102,
+	"simple_name": "Help: t!admin checkpremium",
+	"value": "Check the premium status of a server"
+}, {
+	"id": 36,
+	"simple_name": "t!remove no mentions",
+	"value": "You need to mention members to remove from the ticket"
+}, {
+	"id": 40,
+	"simple_name": "t!rename missing name",
+	"value": "You need to specify a new name for this ticket"
+}, {
+	"id": 68,
+	"simple_name": "Help: t!admin updateschema",
+	"value": "Updates the database schema"
+}, {
+	"id": 72,
+	"simple_name": "Help: t!addadmin",
+	"value": "Grants a user or role admin privileges"
+}, {
+	"id": 34,
+	"simple_name": "t!removeadmin on self",
+	"value": "You cannot revoke your own privileges"
+}, {
+	"id": 85,
+	"simple_name": "Help: t!managetags add",
+	"value": "Adds a new tag"
+}, {
+	"id": 104,
+	"simple_name": "Help: t!admin unblacklist",
+	"value": "Remove a guild from the guild blacklist"
+}, {
+	"id": 120,
+	"simple_name": "t!setup auto: category success",
+	"value": "Created Tickets category"
+}, {
+	"id": 25,
+	"simple_name": "t!blacklist on self",
+	"value": "You cannot blacklist yourself"
+}, {
+	"id": 42,
+	"simple_name": "t!unclaim already not claimed",
+	"value": "This ticket is not claimed"
+}, {
+	"id": 86,
+	"simple_name": "Help: t!managetags delete",
+	"value": "Deletes a tag"
+}, {
+	"id": 108,
+	"simple_name": "t!setup: auto description",
+	"value": "Automatically selects options \u0026 creates the required channels"
+}, {
+	"id": 7,
+	"simple_name": "t!close no permission",
+	"value": "You are not permitted to close this ticket"
+}, {
+	"id": 69,
+	"simple_name": "Help: t!admin users",
+	"value": "Prints the total seen member count"
+}, {
+	"id": 132,
+	"simple_name": "t!setup category: success",
+	"value": "The ticket channel category has been changed to `%s`"
+}, {
+	"id": 23,
+	"simple_name": "You are blacklisted",
+	"value": "You are blacklisted in this server!"
+}, {
+	"id": 62,
+	"simple_name": "Help: t!admin forceclose",
+	"value": "Sets the state of the provided tickets to closed"
+}, {
+	"id": 3,
+	"simple_name": "Premium features",
+	"value": "You can purchase a premium subscription from \u003chttps://www.patreon.com/ticketsbot\u003e.\\nPremium provides many benefits, such as:\\n```diff\\n+ Create unlimited ticket panels\\n+ Customise bot name, avatar \u0026 status (whitelabel)\\n+ Detailed statistics about the server, users and support staff\\n+ No branding in the footer of messages\\n+ Support development and help me pay the server costs\\n```\\n\\nAlternatively, you can vote at \u003chttps://vote.ticketsbot.net\u003e to get premium free for 24 hours"
+}, {
+	"id": 33,
+	"simple_name": "t!removeadmin on owner",
+	"value": "The guild owner must be an admin"
+}, {
+	"id": 59,
+	"simple_name": "Help: t!admin",
+	"value": "Bot management"
+}, {
+	"id": 105,
+	"simple_name": "Help: t!setup ez",
+	"value": ""
+}, {
+	"id": 114,
+	"simple_name": "t!setup: category description",
+	"value": "Sets the channel category tickets are created under.\\n**Example:** `t!setup transcripts Support`"
+}, {
+	"id": 118,
+	"simple_name": "t!setup auto: transcript channel success",
+	"value": "Created \u003c#%d\u003e channel"
+}, {
+	"id": 44,
+	"simple_name": "t!unclaim success",
+	"value": "All support representatives can now respond to the ticket"
+}, {
+	"id": 73,
+	"simple_name": "Help: t!addsupport",
+	"value": "Adds a user or role as a support representative"
+}, {
+	"id": 98,
+	"simple_name": "Help: t!removeadmin",
+	"value": "Revokes a user's or role's admin privileges"
+}, {
+	"id": 115,
+	"simple_name": "t!setup: reaction panels description",
+	"value": "Visit the [dashboard](https://panel.ticketsbot.net/manage/%d/panels) to create reaction panels"
+}, {
+	"id": 119,
+	"simple_name": "t!setup auto: transcript channel failure",
+	"value": "I am missing the `Manage Channels` permission"
+}, {
+	"id": 124,
+	"simple_name": "t!setup prefix: success",
+	"value": "The prefix has been changed to `%s`. You can use `%sopen` to open a ticket"
+}, {
+	"id": 128,
+	"simple_name": "t!setup ticket limit: success",
+	"value": "The ticket limit has been updated to `%d`"
+}, {
+	"id": 2,
+	"simple_name": "About command",
+	"value": "Tickets is an easy to use and highly configurable ticket and support bot.\\nSupport server: https://discord.gg/VtV3rSk\\nCommands: Type `t!help`\\nGet started by running `t!setup`"
+}, {
+	"id": 20,
+	"simple_name": "t!add no channel",
+	"value": "You need to mention a ticket channel to add the user(s) in"
+}, {
+	"id": 55,
+	"simple_name": "t!setup: Channel category",
+	"value": "Type the **name** of the **channel category** that you would like tickets to be created under"
+}, {
+	"id": 66,
+	"simple_name": "Help: t!admin ping",
+	"value": "Measures WS latency to Discord"
+}, {
+	"id": 87,
+	"simple_name": "Help: t!managetags list",
+	"value": "Lists all tags"
+}, {
+	"id": 121,
+	"simple_name": "t!setup auto: category failure",
+	"value": "I am missing the `Manage Channels` permission"
+}, {
+	"id": 79,
+	"simple_name": "Help: t!setup",
+	"value": "Allows you to easily configure the bot"
+}, {
+	"id": 80,
+	"simple_name": "Help: t!sync",
+	"value": "Syncs the bot's database to the channels - useful if you a Discord outage has taken place"
+}, {
+	"id": 106,
+	"simple_name": "t!setup: choose subcommand",
+	"value": "Please select an option. You can use t!setup or t!auto to get up and running quickly, or use the other commands to fine tune settings"
+}, {
+	"id": 61,
+	"simple_name": "Help: t!admin debug",
+	"value": "Provides debugging information"
+}, {
+	"id": 16,
+	"simple_name": "Ticket opened",
+	"value": "Opened a new ticket: %s"
+}, {
+	"id": 28,
+	"simple_name": "t!help privacy settings too high",
+	"value": "I couldn't send you a direct message: make sure your privacy settings aren't too high"
+}, {
+	"id": 39,
+	"simple_name": "t!rename success",
+	"value": "This ticket has been renamed to \u003c#%d\u003e"
+}, {
+	"id": 49,
+	"simple_name": "Invalid ticket limit",
+	"value": "Invalid ticket limit (must be 1-10). Defaulting to `%d`"
+}, {
+	"id": 58,
+	"simple_name": "t!setup: Welcome message",
+	"value": "Type the message that should be sent by the bot when a ticket is opened"
+}, {
+	"id": 110,
+	"simple_name": "t!setup: dashboard description",
+	"value": "More settings are available on the [dashboard](https://panel.ticketsbot.net)"
+}, {
+	"id": 9,
+	"simple_name": "Tag create ID too long",
+	"value": "Tag IDs cannot be longer than 16 characters"
+}, {
+	"id": 31,
+	"simple_name": "t!premium invalid key",
+	"value": "Invalid key. Ensure that you have copied it correctly."
+}, {
+	"id": 100,
+	"simple_name": "t!language invalid language",
+	"value": "You need to specify a language code or flag. Available languages:\\n%s"
+}, {
+	"id": 116,
+	"simple_name": "t!setup auto: roles success",
+	"value": "Created `Tickets Admin` \u0026 `Tickets Support` roles"
+}, {
+	"id": 125,
+	"simple_name": "t!setup welcome message: invalid",
+	"value": "Welcome messages must be a maximum of 1024 characters long\\n**Example:**`t!setup wm Thanks for opening a ticket!`"
+}, {
+	"id": 1,
+	"simple_name": "Owner only command",
+	"value": "This command is reserved for the bot owner only"
+}, {
+	"id": 63,
+	"simple_name": "Help: t!admin gc",
+	"value": "Forces a GC sweep"
+}, {
+	"id": 82,
+	"simple_name": "Help: t!stats",
+	"value": "Shows you statistics about users, support staff and the server"
+}, {
+	"id": 96,
+	"simple_name": "Help: t!unclaim",
+	"value": "Removes the claim on the current ticket"
+}, {
+	"id": 109,
+	"simple_name": "t!setup: prefix description",
+	"value": "Changes the prefix (e.g. `t!`) of the bot.\\n**Example:** `t!setup prefix -`"
+}, {
+	"id": 123,
+	"simple_name": "t!setup prefix: invalid",
+	"value": "Prefixes must be a maximum of 8 characters and **not** include the command\\n**Example:** `t!setup prefix -`"
+}, {
+	"id": 101,
+	"simple_name": "Help: t!admin setmessage",
+	"value": "Override a message"
+}, {
+	"id": 122,
+	"simple_name": "t!setup auto: completed",
+	"value": "Setup complete! Click [here](https://panel.ticketsbot.net/manage/%d/panels) to setup a reaction panel, and add the \u003c@\u0026%d\u003e and \u003c@\u0026%d\u003e roles to your staff members"
+}, {
+	"id": 6,
+	"simple_name": "Invalid argument",
+	"value": "Invalid argument: refer to usage"
+}, {
+	"id": 37,
+	"simple_name": "t!remove no permission",
+	"value": "You don't have permission to remove people from this ticket"
+}, {
+	"id": 50,
+	"simple_name": "Not a ticket channel",
+	"value": "This is not a ticket channel"
+}, {
+	"id": 64,
+	"simple_name": "Help: t!admin genpremium",
+	"value": "Generate premium keys"
+}, {
+	"id": 71,
+	"simple_name": "Help: t!vote",
+	"value": "Gives you a link to vote for free premium"
+}, {
+	"id": 93,
+	"simple_name": "Help: t!remove",
+	"value": "Removes a user from a ticket"
+}, {
+	"id": 41,
+	"simple_name": "t!setup already in setup",
+	"value": "You are already in setup mode (use `%scancel` to exit)"
+}, {
+	"id": 12,
+	"simple_name": "Tag delete ID doesn't exist",
+	"value": "A tag with the ID `%s` could not be found"
+}, {
+	"id": 46,
+	"simple_name": "Invalid category",
+	"value": "Invalid category\\nDefaulting to using no category"
+}, {
+	"id": 70,
+	"simple_name": "Help: t!about",
+	"value": "Tells you information about the bot"
+}, {
+	"id": 83,
+	"simple_name": "Help: t!stats server",
+	"value": "Shows you statistics about the server"
+}, {
+	"id": 117,
+	"simple_name": "t!setup auto: roles failure",
+	"value": "I am missing the `Manage Roles` permission"
+}, {
+	"id": 126,
+	"simple_name": "t!setup welcome message: success",
+	"value": "The welcome message has been updated. Open a ticket to see it in action"
+}, {
+	"id": 14,
+	"simple_name": "Tag missing ID",
+	"value": "You must provide the ID of the tag. For more help with tag, visit \u003chttps://ticketsbot.net/tags\u003e."
+}, {
+	"id": 26,
+	"simple_name": "t!blacklist on staff",
+	"value": "You cannot blacklist staff"
+}, {
+	"id": 60,
+	"simple_name": "Help: t!admin checkperms",
+	"value": "Checks permissions for the bot on the channel"
+}, {
+	"id": 74,
+	"simple_name": "Help: t!blacklist",
+	"value": "Toggles whether users are allowed to interact with the bot"
+}, {
+	"id": 112,
+	"simple_name": "t!setup: welcome message description",
+	"value": "Sets the message sent to tickets when opened.\\n**Example:** `t!setup welcomemessage Thanks for opening a ticket!`"
+}, {
+	"id": 35,
+	"simple_name": "t!removesupport no mentions",
+	"value": "You need to mention a user or name a role to grant support representative privileges to"
+}, {
+	"id": 89,
+	"simple_name": "Help: t!add",
+	"value": "Adds a user to a ticket"
+}, {
+	"id": 0,
+	"simple_name": "No permission",
+	"value": "You do not have permission for this"
+}, {
+	"id": 78,
+	"simple_name": "Help: t!removesupport",
+	"value": "Revokes a user's or role's support representative privileges"
+}, {
+	"id": 88,
+	"simple_name": "Help: t!tag",
+	"value": "Sends a message snippet"
+}, {
+	"id": 111,
+	"simple_name": "t!setup: limit description",
+	"value": "Sets the maximum amount of tickets a **single user** can open **at once**.\\n**Example:** `t!setup limit 3`"
+}, {
+	"id": 22,
+	"simple_name": "t!add no permission",
+	"value": "You don't have permission to add people to this ticket"
+}, {
+	"id": 76,
+	"simple_name": "Help: t!panel",
+	"value": "Creates a panel to enable users to open a ticket with 1 click"
+}, {
+	"id": 95,
+	"simple_name": "Help: t!transfer",
+	"value": "Transfers a claimed ticket to another user"
+}, {
+	"id": 130,
+	"simple_name": "t!setup transcripts: success",
+	"value": "The transcripts channel has been changed to \u003c#%d\u003e"
+}, {
+	"id": 17,
+	"simple_name": "t!addadmin no mentions",
+	"value": "You need to mention a user or name a role to grant admin privileges to"
+}, {
+	"id": 30,
+	"simple_name": "t!premium already premium",
+	"value": "This guild already has premium. It expires on %s"
+}, {
+	"id": 27,
+	"simple_name": "t!claim",
+	"value": "Your ticket will be handled by %s"
+}, {
+	"id": 38,
+	"simple_name": "t!remove on staff",
+	"value": "You cannot remove staff from a ticket"
+}, {
+	"id": 52,
+	"simple_name": "Ticket limit reached",
+	"value": "You are only able to open %d %s at once"
+}, {
+	"id": 99,
+	"simple_name": "Help: t!language",
+	"value": "Changes the language the bot uses"
+}, {
+	"id": 107,
+	"simple_name": "t!setup: ez description",
+	"value": "Prompts you with a series of questions to set up the bot"
+}, {
+	"id": 129,
+	"simple_name": "t!setup transcripts: invalid",
+	"value": "You must mention a valid channel in the server (e.g. \u003c#%d\u003e)\\n**Example:** `t!setup transcripts #logs`"
+}, {
+	"id": 21,
+	"simple_name": "t!add channel not a ticket",
+	"value": "The mentioned channel is not a ticket"
+}, {
+	"id": 48,
+	"simple_name": "Invalid prefix",
+	"value": "The maximum prefix length is 8 characters\\nDefaulting to `%s`"
+}, {
+	"id": 54,
+	"simple_name": "t!setup: Archive channel",
+	"value": "Please specify you wish ticket logs to be sent to after tickets have been closed\\nExample: `#logs`"
+}, {
+	"id": 90,
+	"simple_name": "Help: t!claim",
+	"value": "Assigns a single staff member to a ticket"
+}, {
+	"id": 4,
+	"simple_name": "Modmail opened",
+	"value": "Your modmail ticket in %s has been opened! Use `t!close` to close the session."
+}, {
+	"id": 10,
+	"simple_name": "Tag create ID already exists",
+	"value": "A tag with the ID `%s` already exists. You can delete the tag using `t!tag delete %s`"
+}, {
+	"id": 24,
+	"simple_name": "t!blacklist no mentions",
+	"value": "You need to mention a user to toggle the blacklist state for"
+}, {
+	"id": 29,
+	"simple_name": "t!panel",
+	"value": "Visit \u003chttps://panel.ticketsbot.net/manage/%d/panels\u003e to configure a panel"
+}, {
+	"id": 43,
+	"simple_name": "t!unclaim only claimed can unclaim",
+	"value": "Only admins and the user who claimed the ticket can unclaim the ticket"
+}, {
+	"id": 92,
+	"simple_name": "Help: t!open",
+	"value": "Opens a new ticket"
+}, {
+	"id": 11,
+	"simple_name": "Tag delete missing ID",
+	"value": "You must specify a tag ID to delete"
+}, {
+	"id": 15,
+	"simple_name": "Tag invalid ID",
+	"value": "Invalid tag. For more help with tags, visit \u003chttps://ticketsbot.net/tags\u003e."
+}, {
+	"id": 19,
+	"simple_name": "t!add no users",
+	"value": "You need to mention members to add to the ticket"
+}, {
+	"id": 56,
+	"simple_name": "t!setup: Prefix",
+	"value": "Type the prefix that you would like to use for the bot\\nThe prefix is the characters that come *before* the command (excluding the actual command itself)\\nExample: `t!`"
+}, {
+	"id": 67,
+	"simple_name": "Help: t!admin seed",
+	"value": "Seeds the cache with members"
+}, {
+	"id": 81,
+	"simple_name": "Help: t!viewstaff",
+	"value": "Lists the staff members and roles"
+}, {
+	"id": 5,
+	"simple_name": "Vote",
+	"value": "Click here to vote for 24 hours of free premium:\\n\u003chttps://vote.ticketsbot.net\u003e"
+}, {
+	"id": 8,
+	"simple_name": "Tag create invalid arguments",
+	"value": "You must specify a tag ID and contents"
+}, {
+	"id": 45,
+	"simple_name": "Disabled log channel",
+	"value": "Invalid channel, disabling log channel"
+}, {
+	"id": 77,
+	"simple_name": "Help: t!premium",
+	"value": "Activate a premium key for your server"
+}, {
+	"id": 91,
+	"simple_name": "Help: t!close",
+	"value": "Closes the current ticket"
+}, {
+	"id": 51,
+	"simple_name": "Invalid user",
+	"value": "Couldn't find the target user"
+}, {
+	"id": 94,
+	"simple_name": "Help: t!rename",
+	"value": "Renames the current ticket"
+}, {
+	"id": 97,
+	"simple_name": "Help: t!help",
+	"value": "Shows you a list of commands"
+}, {
+	"id": 103,
+	"simple_name": "Help: t!admin blacklist",
+	"value": "Blacklist a guild from using the bot"
+}, {
+	"id": 32,
+	"simple_name": "t!removeadmin no mentions",
+	"value": "You need to mention a user or name a role to revoke admin privileges from"
+}, {
+	"id": 47,
+	"simple_name": "Created category",
+	"value": "I have created the channel category %s for you, you may need to adjust permissions yourself"
+}, {
+	"id": 65,
+	"simple_name": "Help: t!admin getowner",
+	"value": "Gets the owner of a server"
+}, {
+	"id": 75,
+	"simple_name": "Help: t!cancel",
+	"value": "Cancels the setup process"
+}, {
+	"id": 113,
+	"simple_name": "t!setup: transcripts description",
+	"value": "Sets the channel ticket transcripts are sent to.\\n**Example:** `t!setup transcripts #logs`"
+}, {
+	"id": 127,
+	"simple_name": "t!setup ticket limit: invalid",
+	"value": "The ticket limit must be a number in the range 1-10. It is a **per-user** limit for tickets open **at one time**\\n**Example:** `t!setup limit 1`"
+}, {
+	"id": 18,
+	"simple_name": "t!addsupport no mentions",
+	"value": "You need to mention a user or name a role to grant support representative privileges to"
+}, {
+	"id": 84,
+	"simple_name": "Help: t!managetags",
+	"value": "Add, delete or list tags"
+}, {
+	"id": 131,
+	"simple_name": "t!setup category: invalid",
+	"value": "You must provide the name of a [**channel category**](https://support.discord.com/hc/en-us/articles/115001580171-Channel-Categories-101)\\n**Example:** `t!setup category Tickets`"
+}]
