@@ -9,6 +9,7 @@ WORKDIR /tmp/compile
 
 RUN git clone https://github.com/TicketsBot/tickets.rs .
 RUN git checkout $branch
+WORKDIR /tmp/compile/sharder
 RUN cargo build --release --bin whitelabel --features=whitelabel
 
 FROM ubuntu:latest

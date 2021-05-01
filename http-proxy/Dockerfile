@@ -1,9 +1,12 @@
 FROM rust:latest
 
+ARG branch
+
 RUN apt-get update && apt-get -y upgrade && apt-get -y install git openssl libssl-dev ca-certificates
 WORKDIR /tmp/compile/
-RUN git clone https://github.com/twilight-rs/http-proxy .
-RUN cargo build --release
+RUN git clone https://github.com/rxdn/http-proxy .
+RUN git checkout $branch
+RUN cargo build --release --features=expose-metrics
 
 FROM ubuntu:latest
 

@@ -9,7 +9,7 @@ RUN mkdir -p /tmp/compile
 WORKDIR /tmp/compile
 RUN git clone https://github.com/TicketsBot/worker.git .
 RUN git checkout $branch
-RUN go build cmd/worker/main.go
+RUN go build -tags=jsoniter cmd/worker/main.go
 
 # Prod container
 FROM ubuntu:latest
