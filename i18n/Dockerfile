@@ -4,7 +4,7 @@ ARG branch
 
 RUN apk update && apk upgrade && apk add git gcc musl-dev
 
-RUN mpkdir -p /tmp/compile
+RUN mkdir -p /tmp/compile
 WORKDIR /tmp/compile
 
 RUN git clone https://github.com/TicketsBot/translationgenerator .

@@ -1,25 +1,31 @@
-FROM golang:alpine
+# syntax = docker/dockerfile:experimental
+FROM rust:buster
 
 ARG branch
 
-RUN apk update && apk upgrade && apk add git gcc musl-dev
+RUN apt-get update && apt-get -y upgrade && apt-get -y install git openssl libssl-dev ca-certificates cmake
+RUN cargo install sccache
+
+ENV RUSTC_WRAPPER /usr/local/cargo/bin/sccache
 
 RUN mkdir -p /tmp/compile
-WORKDIR /tmp/compile
+WORKDIR /tmp/compile/
 
-RUN git clone https://github.com/TicketsBot/GoServerCounter .
+# Cache bust
+ADD https://www.random.org/integers/?num=1&min=-1000000000&max=1000000000&col=1&base=10&format=plain /cachebuster
+RUN git clone https://github.com/TicketsBot/tickets.rs .
 RUN git checkout $branch
-RUN go build -o servercounter cmd/servercounter/servercounter.go
+RUN --mount=type=cache,target=/root/.cache/sccache cargo build --release --bin server_counter
 
-FROM alpine:latest
+FROM ubuntu:latest
 
-RUN apk update && apk upgrade
+RUN apt-get update && apt-get -y upgrade && apt-get -y install openssl libssl-dev ca-certificates
 
-COPY --from=0 /tmp/compile/servercounter /srv/servercounter/servercounter
-RUN chmod +x /srv/servercounter/servercounter
+COPY --from=0 /tmp/compile/target/release/server_counter /srv/server-counter/server_counter
+RUN chmod +x /srv/server-counter/server_counter
 
-RUN adduser container --disabled-password --no-create-home
+RUN useradd -m container
 USER container
-WORKDIR /srv/servercounter
+WORKDIR /srv/server-counter
 
-CMD ["/srv/servercounter/servercounter"]
+CMD ["/srv/server-counter/server_counter"]
